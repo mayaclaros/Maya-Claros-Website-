@@ -10,13 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-       <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
     <title>Maya Claros</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -35,7 +35,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Maya Claros</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About Me</a>
@@ -48,47 +50,66 @@
     </div>
   </nav>
   <body>
-    <h2>👋🏾 Hi I am</h2>
-    <h1>Maya Claros</h1>
-    <h3>🇺🇸 Front-end developer, based in Woodbridge,VA</h3>
-    <div class="navigation-links">
+    <h2 class="text-center">👋🏾 Hi I am</h2>
+    <h1 class="text-center">Maya Claros</h1>
+    <h3 class="text-center">🇺🇸 Front-end developer, based in Woodbridge,VA</h3>
+    <div class="navigation-links mb-5">
       <a href="about.html#contact" class="contact-link">Contact me</a>
       <a href="about.html" class="about-link">About me</a>
     </div>
-    <div class="card" style="width: 18rem">
-      <img src="images/yoga.png" class="card-img-top" />
-      <div class="card-body">
-        <h5 class="card-title">Yoga</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem">
+            <img src="images/yoga.png" class="card-img-top img-fluid rounded" />
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">
+              <h2 class="mb-3" class="card-title">Yoga</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="mt-5">
+                <a href="#" class="btn btn-primary">Launch Yoga App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem">
+            <img src="images/weather.png" class="card-img-top img-fluid" />
+          </div>
 
-    <div class="card" style="width: 18rem">
-      <div class="text-right">
-      <img src="images/weather.png" class="card-img-top img-fluid" />
-      <div class="card-body text-right">
-        <h5 class="card-title">Weather</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="images/yogurt.png" class="card-img-top img-fluid" />
-      <div class="card-body">
-        <h5 class="card-title">Yogurt</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body">
+            <div class="col-md-10">
+              <h2 class="mb-3" class="card-title">Weather</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="mt-5">
+                <a href="#" class="btn btn-primary">Launch Weather App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+ <div class="col-md-6">
+        <div class="card" style="width: 18rem">
+          <img src="images/yogurt.png" class="card-img-top img-fluid" />
+        </div>
+        <div class="card-body">
+          <div class="col-md-10">
+            <h2 class="mb-3" class="card-title">Yogurt</h2>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="mt-5">
+              <a href="#" class="btn btn-primary">Launch Yogurt App</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
